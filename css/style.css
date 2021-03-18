@@ -70,6 +70,14 @@ header .nav-menu {
   margin-left: 1em;
 }
 
+header nav {
+  display: block;
+}
+
+header .mobilenav {
+  display: none;
+}
+
 .home-main-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -307,6 +315,59 @@ footer .footer-content p {
 }
 
 @media (max-width: 768px) {
+  header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+  header nav {
+    display: none;
+  }
+  header .mobilenav {
+    display: block;
+    position: relative;
+  }
+  header .mobilenav img {
+    cursor: pointer;
+  }
+  header .mobilenav .navwrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    display: none;
+    -webkit-transition: 1s all ease;
+    transition: 1s all ease;
+    margin-left: -3em;
+    padding: .5em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .mobilenav .navwrapper a {
+    display: inline-block;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding: .5em;
+    text-align: center;
+    margin: 1.5em 0;
+    font-size: 1.2rem;
+  }
+  header .mobilenav .navwrapper .inactive {
+    font-family: 'Abril Fatface', cursive;
+    color: #000;
+    border-radius: 30px;
+    font-weight: 700;
+  }
   .home-main-section .hero-home p {
     font-size: 2.5rem;
     margin: 1em 0;
