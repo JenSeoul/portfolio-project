@@ -254,6 +254,58 @@ footer .footer-content p {
   background-color: #FBBA7E;
 }
 
+.aboutmain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  line-height: 1.8rem;
+  padding: 1em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutmain img {
+  display: block;
+}
+
+.aboutmain .aboutitems {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 55%;
+  font-weight: 300;
+}
+
+.aboutmain .aboutitems span {
+  font-weight: 700;
+}
+
+.aboutmain .center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: .3;
+      -ms-flex: .3;
+          flex: .3;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3.5em 0;
+}
+
 @media (max-width: 768px) {
   .home-main-section .hero-home p {
     font-size: 2.5rem;
@@ -302,5 +354,8 @@ footer .footer-content p {
   footer .p-hero {
     font-size: 2.5rem;
     padding-bottom: 1em;
+  }
+  .aboutmain .aboutitems {
+    width: 100%;
   }
 }
