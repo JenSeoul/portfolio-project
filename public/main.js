@@ -1,14 +1,16 @@
 const about = document.getElementById('about');
 const mobileAbout = document.getElementById('mobile-about');
 const body = document.getElementById('body');
-const burgerMenu = document.getElementById('burgermenu')
+const burgerMenu = document.getElementById('burgermenu');
 let   isOpen = false;
+const scrollButton = document.getElementById('scroll');
 
 about.addEventListener('click', changePage);
 mobileAbout.addEventListener('click', changePage);
 burgerMenu.addEventListener('click', toggleNav);
-
-
+scrollButton.addEventListener('click', ()=>{
+    window.scrollTo(0, 1100);
+});
 
 function toggleNav(e){
     e.preventDefault();
@@ -32,9 +34,16 @@ function changePage(){
         <a href="index.html"><img src="./images/Ellipse1.svg" alt="webdesign-portfolio" width="38"></a>
     </div>
     <nav>
-        <a href="/" class="nav-menu outstroke">About</a>
+        <a class="nav-menu outstroke">About</a>
         <a href="mailto:n.waves429@gmail.com" class="nav-menu outstroke">Hire me</a>
     </nav>
+    <div class="mobilenav">
+    <img src="/public/images/burgermenu.svg" alt="burgermenu" id="burgermenu">
+    <div id="mobile-wrapper"class="navwrapper">
+        <a href="#" id="mobile-about" class="inactive">About</a>
+        <a href="mailto:n.waves429@gmail.com" class="inactive">Hire me</a>
+    </div>
+    </div>
     </header>
     <div class="aboutmain">
     <div class="aboutitems center">

@@ -2,8 +2,11 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  width: 100%;
+  height: 100%;
   padding: 0;
-  overflow: auto;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 .outstroke {
@@ -29,6 +32,10 @@
           box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -225,6 +232,13 @@ header .mobilenav {
   margin: 0 1em;
 }
 
+.scrollbutton {
+  position: absolute;
+  cursor: pointer;
+  top: 90vh;
+  right: 5vw;
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -316,9 +330,9 @@ footer .footer-content p {
 
 @media (max-width: 768px) {
   header {
-    position: -webkit-sticky;
-    position: sticky;
     top: 0;
+    position: fixed;
+    width: 100%;
   }
   header nav {
     display: none;
@@ -341,8 +355,6 @@ footer .footer-content p {
     position: absolute;
     z-index: 1;
     display: none;
-    -webkit-transition: 1s all ease;
-    transition: 1s all ease;
     margin-left: -3em;
     padding: .5em;
     -webkit-box-align: center;
@@ -370,7 +382,7 @@ footer .footer-content p {
   }
   .home-main-section .hero-home p {
     font-size: 2.5rem;
-    margin: 1em 0;
+    margin: 2.5em 0 1em 0;
   }
   .home-main-section .projects-home {
     display: -webkit-box;
