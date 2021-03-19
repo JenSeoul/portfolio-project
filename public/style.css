@@ -237,7 +237,7 @@ header .mobilenav {
 .scrollbutton {
   position: absolute;
   cursor: pointer;
-  top: 90vh;
+  top: 50vh;
   right: 5vw;
 }
 
@@ -386,7 +386,7 @@ footer .footer-content p {
     font-weight: 700;
   }
   .home-main-section .hero-home p {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     margin: 2.5em 0 .5em 0;
   }
   .home-main-section .projects-home {
@@ -404,6 +404,7 @@ footer .footer-content p {
   }
   .home-main-section .projects-home .item {
     padding: 1em 1em 1em 0;
+    font-size:1rem;
   }
   .sub-main-section .sub-hero {
     display: -webkit-box;
@@ -415,8 +416,11 @@ footer .footer-content p {
             flex-direction: column;
   }
   .sub-main-section .sub-hero .p-hero {
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding-bottom: 1em;
+  }
+  .sub-main-section .sub-hero .sub-content{
+    font-size: 1rem;
   }
   .sub-main-section .design {
     padding-bottom: 2em;
@@ -432,10 +436,14 @@ footer .footer-content p {
             flex-direction: column;
   }
   footer .p-hero {
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding-bottom: 1em;
+  }
+  footer .footer-content p{
+    font-size:1rem;
   }
   .aboutmain .aboutitems {
     width: 100%;
+    font-size:1rem;
   }
 }
