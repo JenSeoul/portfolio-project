@@ -4,49 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jen's Portfolio</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/png" href="./images/favicon.png" width="16px">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body id="body" class="flex-column">
         <div class="container">
             <header>
                 <div class="logo">
-                    <a href="index.html"><img src="./images/Ellipse1.svg" alt="webdesign-portfolio" width="38"></a>
+                    <a href="/"><img src="./images/Ellipse1.svg" alt="webdesign-portfolio" width="38"></a>
                 </div>
                 <nav>
-                    <a href="#" class="nav-menu outstroke" id="about">About</a>
+                    <a href="/about" class="nav-menu outstroke" id="about">About</a>
                     <a href="mailto:n.waves429@gmail.com" class="nav-menu outstroke">Hire me</a>
                 </nav>
                 <!-- mobilenav -->
                 <div class="mobilenav">
-                    <img src="/public/images/burgermenu.svg" alt="burgermenu" id="burgermenu">
+                    <img src="./images/burgermenu.svg" alt="burgermenu" id="burgermenu">
                     <div id="mobile-wrapper"class="navwrapper">
-                        <a href="#" id="mobile-about" class="inactive">About</a>
+                        <a href="/about" id="mobile-about" class="inactive">About</a>
                         <a href="mailto:n.waves429@gmail.com" class="inactive">Hire me</a>
                     </div>
                 </div>
             </header>
+            <!-- Home-main Section -->
             <section class="home-main-section flex-column">
                 <div class="hero-home">
                     <p class="hero-outstroke">Hello World!<br> 
                         I’m Jen, a Web Developer<br>
-                        who is keen on design
+                        who is into design
                     </p>
                 </div>
                 <div class="projects-home">
                     <p class="outstroke">Projects</p>
                     <div class="itemwrapper">
-                        <div class="item">You know, the classic:&nbsp;<span>The weather 101</span>
-                            <a href="https://the-weather-101.herokuapp.com/"><img src="./images/wwwbutton.svg" alt="webdesign" class="projectlink"></a>
+                        <div class="item">Maybe a cliche but was a big baby-step:&nbsp;<span>The weather 101</span>
+                            <a href="https://the-weather-101.herokuapp.com/" target="blank"><img src="./images/wwwbutton.svg" alt="webdesign" class="projectlink"></a>
                         </div>
-                        <div class="item">I’ve dealt with quite a bit of JSON this time:&nbsp;<span>The movie 101</span> 
-                            <a href="https://the-movie-101.herokuapp.com/"><img src="./images/wwwbutton.svg" alt="webdesign" class="projectlink"></a>
+                        <div class="item">I’ve dealt with the real(?) JSON this time:&nbsp;<span>The movie 101</span> 
+                            <a href="https://the-movie-101.herokuapp.com/" target="blank"><img src="./images/wwwbutton.svg" alt="webdesign" class="projectlink"></a>
                         </div>
                         <div class="item">My very first website for soundtrack play.&nbsp;<span>The playbox 101</span>
-                            <a href="https://playbox101.herokuapp.com/"><img src="./images/wwwbutton.svg" alt="webdesign" class="projectlink"></a>
+                            <a href="https://playbox101.herokuapp.com/" target="blank"><img src="./images/wwwbutton.svg" alt="webdesign" class="projectlink"></a>
                         </div>
                     </div>
                 </div>
             </section>
+            <!-- Home-main second-section -->
             <section class="sub-main-section">
                 <div class="sub-hero">
                     <p class="outstroke p-hero">
@@ -68,11 +71,12 @@
                             <p class="sub-content">
                                 Although I love frontend, I’m still in my learning phase in backend to get to know how web product/website really works. Any advice? I would appreciate it. 
                             </p>
-                            <a href="https://github.com/JenSeoul"><img src="./images/Githubbutton.svg" alt="github" class="projectlink"></a><a href="https://www.instagram.com/"><img src="./images/Instagrambutton.svg" alt="Instagram" class="projectlink"></a>
+                            <a href="https://github.com/JenSeoul" target="blank"><img src="./images/Githubbutton.svg" alt="github" class="projectlink"></a><a href="https://www.instagram.com/" target="blank"><img src="./images/Instagrambutton.svg" alt="Instagram" class="projectlink"></a>
                         </div>
                     </div>
                 </div>
             </section>
+            <!-- Footer -->
             <footer>
                 <p class="outstroke p-hero">
                     Want to know more?
@@ -85,8 +89,6 @@
             </footer>
         </div>
         <div id="scroll" class="scrollbutton"><img src="./images/scrollbutton.svg" alt="fullpagescroll" width="40px"></div>
-<script src="main.js">
-
-</script>
+<script src="main.js"></script>
 </body>
 </html>

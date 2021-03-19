@@ -102,8 +102,8 @@ header .mobilenav {
 }
 
 .home-main-section .hero-home p {
-  font-size: 3.5rem;
-  margin: .6em 0;
+  font-size: 3.8rem;
+  margin: 1.5em 0;
   font-family: 'Abril Fatface', cursive;
 }
 
@@ -150,6 +150,7 @@ header .mobilenav {
       -ms-flex: 1;
           flex: 1;
   padding: 1em;
+  font-size:1.2rem;
   border-bottom: 1px solid #000;
 }
 
@@ -225,6 +226,7 @@ header .mobilenav {
 
 .sub-main-section .sub-hero .sub-content {
   padding: 1em;
+  font-size:1.2rem;
 }
 
 .sub-main-section .sub-hero a {
@@ -270,6 +272,7 @@ footer .footer-content {
 
 footer .footer-content p {
   padding: 1em;
+  font-size:1.2rem;
 }
 
 .changebg {
@@ -297,6 +300,7 @@ footer .footer-content p {
 
 .aboutmain img {
   display: block;
+  margin-top: 5.5rem;
 }
 
 .aboutmain .aboutitems {
@@ -304,6 +308,7 @@ footer .footer-content p {
       -ms-flex: 1;
           flex: 1;
   width: 55%;
+  font-size: 1.1rem;
   font-weight: 300;
 }
 
@@ -325,7 +330,7 @@ footer .footer-content p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 3.5em 0;
+  margin:  0;
 }
 
 @media (max-width: 768px) {
@@ -382,7 +387,7 @@ footer .footer-content p {
   }
   .home-main-section .hero-home p {
     font-size: 2.5rem;
-    margin: 2.5em 0 1em 0;
+    margin: 2.5em 0 .5em 0;
   }
   .home-main-section .projects-home {
     display: -webkit-box;
@@ -395,6 +400,7 @@ footer .footer-content p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding-top:2.5rem;
   }
   .home-main-section .projects-home .item {
     padding: 1em 1em 1em 0;
@@ -415,6 +421,7 @@ footer .footer-content p {
   .sub-main-section .design {
     padding-bottom: 2em;
   }
+ 
   footer {
     display: -webkit-box;
     display: -ms-flexbox;
