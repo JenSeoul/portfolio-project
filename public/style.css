@@ -50,7 +50,7 @@ body {
   min-height: 100vh;
   font-family: 'Montserrat', sans-serif;
 }
-body::-webkit-scrollbar{
+body::-webkit-scrollbar, html::-webkit-scrollbar{
   display:none;
 }
 header {
