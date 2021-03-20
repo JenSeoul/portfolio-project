@@ -5,10 +5,14 @@
   width: 100%;
   height: 100%;
   padding: 0;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
 }
-
+.container{
+  -ms-overflow-style:none;
+  scrollbar-width:none;
+}
+.container::-webkit-scrollbar{
+  display:none;
+}
 .outstroke {
   color: transparent;
   -webkit-text-stroke: .7px #000;
@@ -52,6 +56,10 @@ body {
 }
 body::-webkit-scrollbar, html::-webkit-scrollbar{
   display:none;
+}
+body{
+  -ms-overflow-style:none;
+  scrollbar-width:none;
 }
 header {
   display: -webkit-box;
